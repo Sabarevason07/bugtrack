@@ -1,0 +1,51 @@
+/* Navbar.css */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh; /* Set sidebar height to 100% of viewport height */
+    width: 250px;
+    background: rgb(0,255,116);
+    background: radial-gradient(circle, rgba(0,255,116,1) 0%, rgba(67,142,0,1) 100%);
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds viewport height */
+  }
+  
+  .sidebar .logo {
+    text-align: center;
+    margin-bottom: 20px;
+    color:blue
+  }
+  
+  .sidebar .logo h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar nav ul li a i {
+    margin-right: 10px;
+  }
+  
+  .sidebar nav ul li a:hover {
+    opacity: 0.8;
+  }
+  
