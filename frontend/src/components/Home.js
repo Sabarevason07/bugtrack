@@ -13,7 +13,7 @@ const Home = () => {
 
   const fetchTotalBugsCount = async () => {
     try {
-      const response = await axios.get('http://127.0.0.1:3003/bugs');
+      const response = await axios.get('http://127.0.0.1:3080/bugs');
       setTotalBugsCount(response.data.length);
     } catch (error) {
       console.error(error);
@@ -22,7 +22,7 @@ const Home = () => {
 
   const fetchSolvedBugsCount = async () => {
     try {
-      const response = await axios.get('http://127.0.0.1:3003/bugs?status=Solv');
+      const response = await axios.get('http://127.0.0.1:3080/bugs?status=Solved');
       setSolvedBugsCount(response.data.length);
     } catch (error) {
       console.error(error);

@@ -1,10 +1,7 @@
-
-// BugTracker.js
 import React, { useState } from 'react';
 import axios from 'axios';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-
 
 const BugTracker = () => {
   const [title, setTitle] = useState('');
@@ -15,7 +12,7 @@ const BugTracker = () => {
 
   const handleCreateBug = async () => {
     try {
-      await axios.post('http://127.0.0.1:3050/bugs', { title, content, priority, reportedBy, date });
+      await axios.post('http://127.0.0.1:3080/bugs', { title, content, priority, reportedBy, date });
       alert('Bug created successfully');
       setTitle('');
       setContent('');
