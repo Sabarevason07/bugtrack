@@ -1,0 +1,7 @@
+.bug{
+    border-color: rgb(0, 0, 0);
+    border-width: 5px;
+    background: rgb(0,255,116);
+    background: radial-gradient(circle, rgba(0,255,116,1) 0%, rgba(67,142,0,1) 100%);
+    
+}

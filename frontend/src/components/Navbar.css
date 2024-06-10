@@ -5,7 +5,12 @@
     left: 0;
     height: 100vh; /* Set sidebar height to 100% of viewport height */
     width: 250px;
+<<<<<<< HEAD
     background: linear-gradient(to bottom, #4CAF50, #388E3C);
+=======
+    background: rgb(0,255,116);
+    background: radial-gradient(circle, rgba(0,255,116,1) 0%, rgba(67,142,0,1) 100%);
+>>>>>>> e00ef8e0ddbd53f3b75942345d6d45d23c297b6c
     color: #fff;
     padding: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
