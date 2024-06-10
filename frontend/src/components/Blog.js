@@ -1,17 +1,11 @@
-<<<<<<< HEAD
-=======
 
 // BugTracker.js
->>>>>>> e00ef8e0ddbd53f3b75942345d6d45d23c297b6c
 import React, { useState } from 'react';
 import axios from 'axios';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-<<<<<<< HEAD
-=======
 import './Blog.css';
 
->>>>>>> e00ef8e0ddbd53f3b75942345d6d45d23c297b6c
 
 const BugTracker = () => {
   const [title, setTitle] = useState('');
@@ -22,11 +16,7 @@ const BugTracker = () => {
 
   const handleCreateBug = async () => {
     try {
-<<<<<<< HEAD
-      await axios.post('http://127.0.0.1:3080/bugs', { title, content, priority, reportedBy, date });
-=======
       await axios.post('http://127.0.0.1:3050/bugs', { title, content, priority, reportedBy, date });
->>>>>>> e00ef8e0ddbd53f3b75942345d6d45d23c297b6c
       alert('Bug created successfully');
       setTitle('');
       setContent('');
@@ -41,11 +31,7 @@ const BugTracker = () => {
   return (
     <div>
       <h3>Bug Tracker</h3>
-<<<<<<< HEAD
-      <Form>
-=======
       <Form className="form">
->>>>>>> e00ef8e0ddbd53f3b75942345d6d45d23c297b6c
         <Form.Group controlId="title">
           <Form.Label>Title</Form.Label>
           <Form.Control type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
@@ -76,8 +62,4 @@ const BugTracker = () => {
   );
 };
 
-<<<<<<< HEAD
 export default BugTracker;
-=======
-export default BugTracker;
->>>>>>> e00ef8e0ddbd53f3b75942345d6d45d23c297b6c
